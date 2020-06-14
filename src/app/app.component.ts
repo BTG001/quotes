@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Quotes';
+  quote = "To bring about change, you must not be afraid to take the first step. We will fail when we fail to try"
 }
