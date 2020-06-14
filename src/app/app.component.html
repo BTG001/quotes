@@ -1,4 +1,8 @@
 <div>
   <h1>Insightful Quotes</h1>
-  <p>My Quote is : <span id="quote"> {{ quote }} </span></p>
+    <ul>
+      <li *ngFor="let quote of quotes">
+        <span id="quote"> {{ quote }} </span>
+      </li>
+    </ul>
 </div>
