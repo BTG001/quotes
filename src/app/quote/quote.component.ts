@@ -8,14 +8,11 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
 
-  quotes:Quote[] = [
-    {name:"To bring about change, you must not be afraid to take the first step. We will fail when we fail to try.", author:"Rosa Parks"},
-    {name:"Not everything that is faced can be changed, but nothing can be changed until it is faced.", author:"James Baldwin"},
-    {name:"An eye for an eye makes the world blind.", author:"Mahatma Gandhi"},
-    {name:"It doesn't matter who you are, where you come from. The ability to triumph begins with you — always.", author:"Oprah Winfrey"},
-    {name:"Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.", author:"Martin Luther King Jr."},
-  ];
-
+  quotes=[new Quote("Martin Luther King Jr.","NewYork Times","Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that."),
+new Quote("James Baldwin","London Paper","Not everything that is faced can be changed, but nothing can be changed until it is faced.")]
+  preNum:number
+  lastNum:number
+  counter:number
 
   constructor() { }
 
